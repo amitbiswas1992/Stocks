@@ -9,8 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E82568F269811CB002141DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E82568E269811CB002141DE /* AppDelegate.swift */; };
 		5E825691269811CB002141DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E825690269811CB002141DE /* SceneDelegate.swift */; };
-		5E825693269811CB002141DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E825692269811CB002141DE /* ViewController.swift */; };
-		5E825696269811CB002141DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E825694269811CB002141DE /* Main.storyboard */; };
+		5E825693269811CB002141DE /* WatchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E825692269811CB002141DE /* WatchListViewController.swift */; };
 		5E825698269811CD002141DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E825697269811CD002141DE /* Assets.xcassets */; };
 		5E82569B269811CD002141DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E825699269811CD002141DE /* LaunchScreen.storyboard */; };
 		5E8256AB26981321002141DE /* TopStoriesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256AA26981321002141DE /* TopStoriesNewsViewController.swift */; };
@@ -22,8 +21,7 @@
 		5E82568B269811CB002141DE /* Stocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stocks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E82568E269811CB002141DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E825690269811CB002141DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E825692269811CB002141DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5E825695269811CB002141DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5E825692269811CB002141DE /* WatchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchListViewController.swift; sourceTree = "<group>"; };
 		5E825697269811CD002141DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E82569A269811CD002141DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E82569C269811CD002141DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +80,6 @@
 		5E8256A42698120C002141DE /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5E825694269811CB002141DE /* Main.storyboard */,
 				5E825699269811CD002141DE /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -98,7 +95,7 @@
 		5E8256A626981210002141DE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5E825692269811CB002141DE /* ViewController.swift */,
+				5E825692269811CB002141DE /* WatchListViewController.swift */,
 				5E8256AA26981321002141DE /* TopStoriesNewsViewController.swift */,
 				5E8256AD2698133A002141DE /* SearchResultsViewController.swift */,
 				5E8256B026981354002141DE /* StockDetailsViewController.swift */,
@@ -175,7 +172,6 @@
 			files = (
 				5E82569B269811CD002141DE /* LaunchScreen.storyboard in Resources */,
 				5E825698269811CD002141DE /* Assets.xcassets in Resources */,
-				5E825696269811CB002141DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E8256B126981354002141DE /* StockDetailsViewController.swift in Sources */,
-				5E825693269811CB002141DE /* ViewController.swift in Sources */,
+				5E825693269811CB002141DE /* WatchListViewController.swift in Sources */,
 				5E8256AB26981321002141DE /* TopStoriesNewsViewController.swift in Sources */,
 				5E82568F269811CB002141DE /* AppDelegate.swift in Sources */,
 				5E825691269811CB002141DE /* SceneDelegate.swift in Sources */,
@@ -198,14 +194,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5E825694269811CB002141DE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E825695269811CB002141DE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E825699269811CD002141DE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
