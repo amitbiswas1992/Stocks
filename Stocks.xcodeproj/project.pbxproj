@@ -15,6 +15,9 @@
 		5E8256AB26981321002141DE /* TopStoriesNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256AA26981321002141DE /* TopStoriesNewsViewController.swift */; };
 		5E8256AE2698133A002141DE /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256AD2698133A002141DE /* SearchResultsViewController.swift */; };
 		5E8256B126981354002141DE /* StockDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256B026981354002141DE /* StockDetailsViewController.swift */; };
+		5E8256B92698185A002141DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256B82698185A002141DE /* NetworkManager.swift */; };
+		5E8256BC26981874002141DE /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256BB26981874002141DE /* PersistenceManager.swift */; };
+		5E8256BF26981881002141DE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256BE26981881002141DE /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		5E8256AA26981321002141DE /* TopStoriesNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopStoriesNewsViewController.swift; sourceTree = "<group>"; };
 		5E8256AD2698133A002141DE /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		5E8256B026981354002141DE /* StockDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailsViewController.swift; sourceTree = "<group>"; };
+		5E8256B82698185A002141DE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5E8256BB26981874002141DE /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		5E8256BE26981881002141DE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +66,9 @@
 		5E82568D269811CB002141DE /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				5E8256A52698120E002141DE /* Managers */,
 				5E8256A726981240002141DE /* Others */,
 				5E8256A626981210002141DE /* Controllers */,
-				5E8256A52698120E002141DE /* Managers */,
 				5E8256A42698120C002141DE /* Views */,
 				5E8256A326981209002141DE /* Models */,
 				5E82569C269811CD002141DE /* Info.plist */,
@@ -88,6 +94,9 @@
 		5E8256A52698120E002141DE /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				5E8256B82698185A002141DE /* NetworkManager.swift */,
+				5E8256BB26981874002141DE /* PersistenceManager.swift */,
+				5E8256BE26981881002141DE /* HapticManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -185,8 +194,11 @@
 				5E8256B126981354002141DE /* StockDetailsViewController.swift in Sources */,
 				5E825693269811CB002141DE /* WatchListViewController.swift in Sources */,
 				5E8256AB26981321002141DE /* TopStoriesNewsViewController.swift in Sources */,
+				5E8256BC26981874002141DE /* PersistenceManager.swift in Sources */,
+				5E8256B92698185A002141DE /* NetworkManager.swift in Sources */,
 				5E82568F269811CB002141DE /* AppDelegate.swift in Sources */,
 				5E825691269811CB002141DE /* SceneDelegate.swift in Sources */,
+				5E8256BF26981881002141DE /* HapticManager.swift in Sources */,
 				5E8256AE2698133A002141DE /* SearchResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
