@@ -18,6 +18,7 @@
 		5E8256B92698185A002141DE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256B82698185A002141DE /* NetworkManager.swift */; };
 		5E8256BC26981874002141DE /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256BB26981874002141DE /* PersistenceManager.swift */; };
 		5E8256BF26981881002141DE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8256BE26981881002141DE /* HapticManager.swift */; };
+		5EC3C73F26A01539004B4CBB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC3C73E26A01539004B4CBB /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		5E8256B82698185A002141DE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		5E8256BB26981874002141DE /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		5E8256BE26981881002141DE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		5EC3C73E26A01539004B4CBB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				5E82568E269811CB002141DE /* AppDelegate.swift */,
 				5E825690269811CB002141DE /* SceneDelegate.swift */,
 				5E825697269811CD002141DE /* Assets.xcassets */,
+				5EC3C73E26A01539004B4CBB /* Extensions.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				5E8256AB26981321002141DE /* TopStoriesNewsViewController.swift in Sources */,
 				5E8256BC26981874002141DE /* PersistenceManager.swift in Sources */,
 				5E8256B92698185A002141DE /* NetworkManager.swift in Sources */,
+				5EC3C73F26A01539004B4CBB /* Extensions.swift in Sources */,
 				5E82568F269811CB002141DE /* AppDelegate.swift in Sources */,
 				5E825691269811CB002141DE /* SceneDelegate.swift in Sources */,
 				5E8256BF26981881002141DE /* HapticManager.swift in Sources */,
