@@ -59,14 +59,14 @@ extension WatchListViewController: UISearchResultsUpdating {
 
         // Call API Search
         
-        // Update result 
+        // Update result
         resultVC.update(with: ["Google"])
     }
 }
 
 extension WatchListViewController: SearchResultsViewControllerDelegate {
     func searchResultViewcontrollerDidSelect(searchResult: String) {
-        <#code#>
+
     }
     
 }

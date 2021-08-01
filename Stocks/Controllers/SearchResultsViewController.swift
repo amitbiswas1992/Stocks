@@ -42,7 +42,7 @@ class SearchResultsViewController: UIViewController {
         tableView.dataSource = self
     }
     
-    public func update(with result: [String]) {
+    public func update(with results: [String]) {
         self.results = results
         tableView.reloadData()
     }
