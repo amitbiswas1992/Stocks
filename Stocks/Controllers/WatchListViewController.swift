@@ -8,6 +8,7 @@
 import UIKit
 
 class WatchListViewController: UIViewController {
+    
 
     // MARK:- LifeCycle
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class WatchListViewController: UIViewController {
     
     private func setUpSearchController() {
         let resultVC = SearchResultsViewController()
+        resultVC.delegate = self
         let searchVC = UISearchController(searchResultsController: resultVC)
         searchVC.searchResultsUpdater = self
         navigationItem.searchController = searchVC
@@ -56,5 +58,15 @@ extension WatchListViewController: UISearchResultsUpdating {
 
 
         // Call API Search
+        
+        // Update result 
+        resultVC.update(with: ["Google"])
     }
+}
+
+extension WatchListViewController: SearchResultsViewControllerDelegate {
+    func searchResultViewcontrollerDidSelect(searchResult: String) {
+        <#code#>
+    }
+    
 }

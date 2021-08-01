@@ -7,8 +7,16 @@
 
 import UIKit
 
+protocol  SearchResultsViewControllerDelegate: AnyObject {
+    func searchResultViewcontrollerDidSelect(searchResult: String)
+}
+
 class SearchResultsViewController: UIViewController {
 
+    weak var delegate: SearchResultsViewControllerDelegate?
+    
+    private var results: [String] = []
+    
     private let tableView: UITableView = {
        let table = UITableView()
         // register cell
@@ -33,6 +41,11 @@ class SearchResultsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    public func update(with result: [String]) {
+        self.results = results
+        tableView.reloadData()
+    }
 }
 
 extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSource {
@@ -51,5 +64,10 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
         cell.textLabel?.text = "APPLE"
         cell.detailTextLabel?.text = "Apple Inc"
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.searchResultViewcontrollerDidSelect(searchResult: "APPLE")
     }
 }
