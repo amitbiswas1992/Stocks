@@ -13,9 +13,9 @@ final class NetworkManager {
     private init () {}
     
     private struct Constant {
-        static let apiKey = ""
-        static let snadBoxApiKey = ""
-        static let baseUrl = ""
+        static let apiKey = "c431puiad3i9eq3upirg"
+        static let snadBoxApiKey = "sandbox_c431puiad3i9eq3upis0"
+        static let baseUrl = "https://finnhub.io/api/v1/"
     }
 
     //MARK:- Public
@@ -31,6 +31,7 @@ final class NetworkManager {
 
     private enum Endpoint: String {
         case search
+        
     }
 
     private enum APIError: String, Error {
@@ -41,8 +42,18 @@ final class NetworkManager {
     }
 
     private func url(for endpoint: Endpoint, queryParam: [String: String] = [:]) -> URL? {
-
-        return nil
+        
+        var urlString = Constant.baseUrl + endpoint.rawValue
+        var queryItem = [URLQueryItem]()
+        // Add any parameter url
+        for (name, value ) in queryParam {
+            queryItem.append(.init(name: name, value: value))
+        }
+        // Add token
+        queryItem.append(.init(name: "token", value: Constant.apiKey))
+        urlString += "?" +  queryItem.map {"\($0.name) = \($0.value ?? "" )" }.joined(separator: "&")
+        
+        return URL(string: urlString)
     }
 
     //MARK:- Generic API call
